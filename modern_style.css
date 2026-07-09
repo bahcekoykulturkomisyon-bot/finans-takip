@@ -1,0 +1,54 @@
+body{
+font-family:Arial,sans-serif;
+background:#f3f6fb;
+margin:0;
+padding:20px;
+}
+.container{
+max-width:700px;
+margin:auto;
+}
+.card{
+background:white;
+border-radius:20px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+.balance-card{
+text-align:center;
+}
+.balance{
+font-size:36px;
+font-weight:bold;
+margin-top:10px;
+}
+input,select,button{
+width:100%;
+padding:14px;
+margin-top:10px;
+border-radius:12px;
+border:1px solid #ddd;
+box-sizing:border-box;
+}
+button{
+cursor:pointer;
+font-weight:bold;
+}
+.filters{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:10px;
+margin-bottom:20px;
+}
+.transaction{
+background:white;
+padding:15px;
+border-radius:16px;
+margin-bottom:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+.time{
+font-size:12px;
+opacity:.7;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finans Takip</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card balance-card">
+        <h2>Kalan Bakiye</h2>
+        <div id="balance" class="balance">0 TL</div>
+    </div>
+
+    <div class="card">
+        <h3>Maaş Tanımla</h3>
+        <input id="salary" type="number" placeholder="Maaş miktarı">
+        <button onclick="setSalary()">Kaydet</button>
+    </div>
+
+    <div class="card">
+        <h3>İşlem Ekle</h3>
+        <input id="desc" placeholder="Açıklama">
+        <input id="amount" type="number" placeholder="Tutar">
+        <select id="method">
+            <option value="Nakit">💵 Nakit</option>
+            <option value="Kart">💳 Kart</option>
+        </select>
+        <button onclick="addTransaction()">İşlemi Ekle</button>
+    </div>
+
+    <div class="filters">
+        <button onclick="showTransactions('Hepsi')">📋 Tümü</button>
+        <button onclick="showTransactions('Nakit')">💵 Nakit</button>
+        <button onclick="showTransactions('Kart')">💳 Kart</button>
+    </div>
+
+    <div id="list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
